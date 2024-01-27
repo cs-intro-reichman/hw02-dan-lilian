@@ -55,15 +55,15 @@ public class OneOfEachStats {
 		int mostCommom =Math.max(familiesOf2,(Math.max(familiesOf3, familiesOf4OrMore)));
 		if (mostCommom==familiesOf2)
 		{
-			System.out.println("The most common number of children is 2");
+			System.out.println("The most common number of children is 2.");
 		} else 
 		{
 			if (mostCommom==familiesOf3)
 			{
-				System.out.println("The most common number of children is 3");
+				System.out.println("The most common number of children is 3.");
 			} else
 		       {
-			   System.out.println("The most common number of children is 4 or more");
+			   System.out.println("The most common number of children is 4 or more.");
 		       }
 		 } 
 
