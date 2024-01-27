@@ -5,5 +5,13 @@
 public class InOrder {
 	public static void main (String[] args) {
 		//// Write your code here
+		int current = (int)(10*Math.random());
+		int previous = current;
+		do {
+			previous = current;
+			System.out.print(current + " ");
+			 current = (int)(10*Math.random());
+		} while (current >= previous);
+			
 	}
 }
