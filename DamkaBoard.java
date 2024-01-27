@@ -7,16 +7,23 @@ public class DamkaBoard {
 		int n = Integer.parseInt(args[0]);
 		for (int rows = 1; rows<= n; rows++)
 		{
-			if (rows%2 == 0)
+			if (rows%2 != 0)
 			{
-			System.out.print(" ");
-			}
-		    for (int columns = 1; columns<=n; columns++)
+			for (int columns = 1; columns<=n; columns++)
 		      {
 				System.out.print("* ");
 		      }
+			}else 
+			  {
+				if (rows%2 == 0)
+				{
+					for (int columns = 1; columns<=n; columns++)
+					{
+					  System.out.print(" *");
+					}	
+				}
+		      }
 			System.out.println();
-		}
-
-	}
+	    }
+    }
 }
